@@ -52,9 +52,7 @@ export default {
   methods:{
     showItems(item){
        this.$router.push({
-          path:item.push({
-            path:item.path
-          })
+          path:item.path
        })
     }
   },

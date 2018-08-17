@@ -3,6 +3,7 @@
     "href": "/huoying/tupian/281886.html",
     "image": "http://dmimg.5054399.com/allimg/160913/7_160913105544_3.jpg",
     "title": "疾风传雏田手办",
+    "price":"500",
     "imgs": [
       "http://dmimg.5054399.com/allimg/narutopic/160913a/000.jpg",
       "http://dmimg.5054399.com/allimg/narutopic/160913a/001.jpg",
@@ -19,6 +20,7 @@
     "href": "/huoying/tupian/278009.html",
     "image": "http://dmimg.5054399.com/allimg/160718/7_160718170338_3.jpg",
     "title": "宇智波鼬暗部手办",
+    "price":"880",
     "imgs": [
       "http://dmimg.5054399.com/allimg/narutopic/160618a/000.jpg",
       "http://dmimg.5054399.com/allimg/narutopic/160618a/001.jpg",
@@ -27,6 +29,7 @@
       "http://dmimg.5054399.com/allimg/narutopic/160618a/004.jpg",
       "http://dmimg.5054399.com/allimg/narutopic/160618a/005.jpg",
       "http://dmimg.5054399.com/allimg/narutopic/160618a/006.jpg"
+      
     ],
     "summary": "宇智波鼬暗部手办，属MegaHouse生产的G.E.M系列，高约21cm，预计2016年11月下旬发售。图片来自MegaHouse官网。"
   },
@@ -34,8 +37,8 @@
     "href": "/huoying/tupian/272842.html",
     "image": "http://dmimg.5054399.com/allimg/160411/7_160411103947_3.jpg",
     "title": "鸣人最新手办",
+    "price":"880",
     "imgs": [
-      "http://dmimg.5054399.com/allimg/narutopic/160411a/000.jpg",
       "http://dmimg.5054399.com/allimg/narutopic/160411a/001.jpg",
       "http://dmimg.5054399.com/allimg/narutopic/160411a/002.jpg",
       "http://dmimg.5054399.com/allimg/narutopic/160411a/003.jpg",
@@ -48,6 +51,7 @@
     "href": "/huoying/tupian/272486.html",
     "image": "http://dmimg.5054399.com/allimg/160330/7_160330095534_3.jpg",
     "title": "佐助最新手办",
+    "price":"880",
     "imgs": [
       "http://dmimg.5054399.com/allimg/narutopic/160330a/000.jpg",
       "http://dmimg.5054399.com/allimg/narutopic/160330a/001.jpg",
@@ -63,6 +67,7 @@
     "href": "/huoying/tupian/270772.html",
     "image": "http://dmimg.5054399.com/allimg/160229/7_160229115531_3.jpg",
     "title": "火影鹿丸手办",
+    "price":"880",
     "imgs": [
       "http://dmimg.5054399.com/allimg/narutopic/160229a/000.jpg",
       "http://dmimg.5054399.com/allimg/narutopic/160229a/001.jpg",
@@ -79,6 +84,7 @@
     "href": "/huoying/tupian/266820.html",
     "image": "http://dmimg.5054399.com/allimg/151221/7_151221094308_3.jpg",
     "title": "六道模式鸣人手办",
+    "price":"880",
     "imgs": [
       "http://dmimg.5054399.com/allimg/narutopic/151221a/000.jpg",
       "http://dmimg.5054399.com/allimg/narutopic/151221a/001.jpg",
@@ -98,6 +104,7 @@
     "href": "/huoying/tupian/266728.html",
     "image": "http://dmimg.5054399.com/allimg/151218/7_151218150008_3.jpg",
     "title": "宇智波鼬手办",
+    "price":"880",
     "imgs": [
       "http://dmimg.5054399.com/allimg/narutopic/151218a/000.jpg",
       "http://dmimg.5054399.com/allimg/narutopic/151218a/001.jpg",
@@ -113,6 +120,7 @@
     "href": "/huoying/tupian/266588.html",
     "image": "http://dmimg.5054399.com/allimg/151217/7_151217101230_3.jpg",
     "title": "带土手办",
+    "price":"880",
     "imgs": [
       "http://dmimg.5054399.com/allimg/narutopic/151217a/000.jpg",
       "http://dmimg.5054399.com/allimg/narutopic/151217a/001.jpg",
@@ -128,6 +136,7 @@
     "href": "/huoying/tupian/266509.html",
     "image": "http://dmimg.5054399.com/allimg/151216/7_151216142035_3.jpg",
     "title": "小李手办",
+    "price":"880",
     "imgs": [
       "http://dmimg.5054399.com/allimg/narutopic/151216a/000.jpg",
       "http://dmimg.5054399.com/allimg/narutopic/151216a/001.jpg",
@@ -140,5 +149,6 @@
       "http://dmimg.5054399.com/allimg/narutopic/151216a/008.jpg"
     ],
     "summary": ""
+
   }
 ]

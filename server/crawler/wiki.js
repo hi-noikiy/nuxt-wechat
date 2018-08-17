@@ -48,6 +48,33 @@ async function fetchCaar(i){
     return caterList
 }
 
+async function fetchCaDateil(item){
+    const options ={
+        url:'http://www.4399dmw.com/'+item.href,
+        transform:body=>cheerio.load(body)
+    }
+
+    let $ =await rp(options)
+
+    let sections =[]
+    let jianjie = $('.cont').find('p').eq(1).text() 
+    let name ='简介'
+    let postimg =$('.cont').find('div').eq(0).find('img').attr('src')
+
+
+    sections.push({
+        jianjie,
+        name,
+        postimg
+    })
+
+    return {
+        sections,
+        postimg
+    }
+ 
+}
+
 async function fetchHouse(item){
     const options ={
         url:'http://www.4399dmw.com/'+item.href,
@@ -122,7 +149,19 @@ async function fetchHouse(item){
     }
 
 
+    for(let i=0;i<houses.length;i++){
+        let h =houses[i]
+        for(let i=0;i<h.cater.length;i++){
+            let item = h.cater[i]
+            const data =await fetchCaDateil(item)
+            item.img =data.postimg
+            item.sections =data.sections
+        }
+    }
+
+
     console.log(houses)
 
-    writeFileSync(resolve(__dirname,'../crawler/wiki.json'),JSON.stringify(houses,null,2),'utf8')
+   writeFileSync(resolve(__dirname,'../crawler/houses.json'),JSON.stringify(houses,null,2),'utf8')
+    
 })()

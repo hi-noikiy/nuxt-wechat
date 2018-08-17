@@ -47,6 +47,7 @@ class Server {
 
       await nuxt.render(ctx.req, ctx.res)
     })
+     
 
     this.app.listen(port, host)
     console.log('Server listening on ' + host + ':' + port) // eslint-disable-line no-console

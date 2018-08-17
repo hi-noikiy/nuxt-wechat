@@ -4,7 +4,7 @@
     .swiper(v-swiper='swiperConfig')
       .swiper-wrapper
         .swiper-slide(v-for='item in product.images')
-          img(:src='qiniu + item')
+          img(:src='item')
       .swiper-pagination.swiper-pagination-bullets
 
     .content

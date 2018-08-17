@@ -1,10 +1,10 @@
 <template lang="pug">
 .container
   .shopping
-    .title 权游周边
+    .title 手办商城
     .list
       .items(v-for='(item, index) in products' :key='index' @click='showProduct(item)')
-        img(:src='imageCDN + item.images[0]')
+        img(:src='item.post')
         .body
           .title {{item.title}}
           .content {{item.intro}}

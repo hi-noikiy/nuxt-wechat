@@ -163,7 +163,7 @@ export async function createOrderAsync (ctx, next) {
   }
 }
 
-export async function wechatPay (code) {
+export async function wechatPay (ctx,next) {
   const ip = ctx.ip.replace('::ffff:', '')
   const session = ctx.session
   const {
