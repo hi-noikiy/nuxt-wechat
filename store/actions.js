@@ -102,6 +102,11 @@ export default {
   async fetchProducts ({ state }) {
     const res = await Services.fetchProducts()
 
+    for(let i=0;i<res.data.data.length;i++){
+      if(res.data.data[i].intro.length>45){
+        res.data.data[i].intro =res.data.data[i].intro.substring(0,45)+"..."
+      }
+    }
     state.products = res.data.data
 
     return res
