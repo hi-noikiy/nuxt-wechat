@@ -20,7 +20,6 @@ const wechatConfig = {
 
 export const getWechat = () => {
   const wechatClient = new Wechat(wechatConfig.wechat)
-
   return wechatClient
 }
 

@@ -10,6 +10,7 @@ fs.readdirSync(models)
   .filter(file => ~file.search(/^[^\.].*js$/))
   .forEach(file => require(resolve(models, file)))
 
+
 const formatData = R.map(i => {
   i._id = i.nmId
 
@@ -19,6 +20,7 @@ const formatData = R.map(i => {
 let wikiCharacters = require(resolve(__dirname, '../database/json/completeCharacters.json'))
 let wikiHouses = require(resolve(__dirname, '../database/json/completeHouses.json'))
 let exProduct =require(resolve(__dirname,'../crawler/garage.json'))
+let exHouse =require(resolve(__dirname,'../crawler/houses.json'))
 
 wikiCharacters = formatData(wikiCharacters)
 
@@ -62,6 +64,41 @@ export const database = app => {
          })
 
         await product.save()
+      }
+    }
+
+    if(!exHouse.length){
+      for(let i=0;i<exHouse.length;i++){
+        let h =exHouse[i]
+        let house =new WikiHouse({
+           name:h.name,
+           intro:h.info,
+           cover:h.detailImg
+        })
+
+        await house.save()
+        for(let i=0;i<house.cater;i++){
+          let cater =house.cater[i]
+          let caters =new WikiCharacter({
+             name:cater.name,
+             profile:cater.img,
+             images:cater.imgs,
+             playedBy:cater.detail,
+             sections:cater.sections,
+             house:house._id 
+
+          })
+         await caters.save()
+          if(!house.swornMembers){
+             house.swornMembers.push(caters._id)
+          }else {
+            if(house.swornMembers.indexOf(caters._id)===-1){
+              house.swornMembers.push(caters._id)
+            }
+          }
+
+          await house.save()
+        }
       }
     }
 

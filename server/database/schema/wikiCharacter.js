@@ -4,12 +4,9 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 const Mixed = Schema.Types.Mixed
+const { ObjectId } =Schema.Types
 
 const WikiCharacterSchema = new mongoose.Schema({
-  _id: String,
-  wikiId: Number,
-  nmId: String,
-  chId: String,
   name: String,
   cname: String,
   playedBy: String,
@@ -21,9 +18,10 @@ const WikiCharacterSchema = new mongoose.Schema({
   intro: [
     String,
   ],
-  address:[
-    {}
-  ],
+  house:{
+    type:ObjectId,
+    ref:'WikiHouse'
+  },
   meta: {
     createdAt: {
       type: Date,

@@ -1,5 +1,5 @@
 {
-  "db": "mongodb://localhost/ice",
+  "db": "mongodb://localhost/hy",
   "SITE_ROOT_URL":"http://surry.free.ngrok.cc/",
   "wechat": {
     "appID": "wx3a57f2507f0c2482",
